@@ -1,6 +1,6 @@
 workflow "Publish on Netlify" {
   resolves = ["Publish"]
-  on = "pull_request"
+  on = "push"
 }
 
 action "Publish" {
