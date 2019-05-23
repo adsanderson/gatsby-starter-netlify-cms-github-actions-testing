@@ -9,7 +9,7 @@ action "Publish" {
 }
 
 action "curl" {
-  uses = "curl"
+  uses = "actions/bin/curl@master"
   needs = ["Publish"]
   args = "https://nifty-benz-00a2b8.netlify.com/"
 }
